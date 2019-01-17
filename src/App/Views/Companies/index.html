@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Companies{% endblock %}
+
+{% block body %}
+
+    <h1>Companies</h1>
+
+    <ul>
+        {% for company in companies %}
+            <h2>{{ company.name }}</h2>
+            <p>{{ company.lat_lon }}</p>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

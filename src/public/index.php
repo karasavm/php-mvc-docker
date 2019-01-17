@@ -13,6 +13,12 @@ require '../vendor/autoload.php';
 
 
 /**
+ * Configurations
+ */
+$config = new \App\Config();
+$config->load();
+
+/**
  * Twig
  */
 Twig_Autoloader::register();
@@ -33,7 +39,13 @@ $router = new Core\Router();
 
 // Add the routes
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
+
 $router->add('posts/index', ['controller' => 'Posts', 'action' => 'index']);
+
+$router->add('companies/index', ['controller' => 'Companies', 'action' => 'index']);
+
+$router->add('users/index', ['controller' => 'Users', 'action' => 'index']);
+
 $router->add('admin/users/index', ['controller' => 'Users', 'action' => 'index', 'namespace' => 'Admin']);
 
 //$router->add('{controller}/{action}');
