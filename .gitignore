@@ -1,0 +1,13 @@
+# new
+
+# IGNORE FOLDERS
+.idea/
+postgres/data/
+
+src/.idea/
+src/logs/
+src/vendor/
+
+
+# IGNORE FILES
+src/.env
