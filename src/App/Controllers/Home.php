@@ -51,4 +51,14 @@ class Home extends \Core\Controller
             'colours' => ['red', 'green', 'blue']
         ]);
     }
+
+    /**
+     * Health check /ping GET api
+     *
+     * @return void
+     */
+    public function pingAction() {
+        header('Content-Type: application/json');
+        echo json_encode(array("message" => "pong"));
+    }
 }

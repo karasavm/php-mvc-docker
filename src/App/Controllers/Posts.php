@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Auth;
 use \Core\View;
 use App\Models\Post;
 
@@ -10,8 +11,9 @@ use App\Models\Post;
  *
  * PHP version 5.4
  */
-class Posts extends \Core\Controller
+class Posts extends \App\Controllers\Authenticated
 {
+
 
     /**
      * Show the index page
@@ -20,11 +22,15 @@ class Posts extends \Core\Controller
      */
     public function indexAction()
     {
+
+//        $this->requireLogin();
+
         $posts = Post::getAll();
 
         View::renderTemplate('Posts/index.html', [
             'posts' => $posts
         ]);
+
     }
 
     /**

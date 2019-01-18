@@ -7,11 +7,28 @@
 <body>
     <nav>
         <a href="/">Home</a> |
+        <a href="/posts">Posts</a> |
         <a href="/companies/index">Companies</a> |
-        <a href="/users/index">Users</a>
+        <a href="/users/index">Users</a> |
+
+        {% if current_user %}
+            <a href="/logout">Logout</a> ({{ current_user.name}})
+        {% else %}
+            <a href="/signup">Signup</a> |
+            <a href="/login">Login</a> |
+        {% endif %}
     </nav>
 
     {% block body %}
     {% endblock %}
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js">
+
+    </script>
 </body>
 </html>

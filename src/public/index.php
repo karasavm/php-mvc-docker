@@ -33,14 +33,32 @@ set_exception_handler('Core\Error::exceptionHandler');
 
 
 /**
+ * Sessions
+ */
+session_start();
+
+
+/**
  * Routing
  */
 $router = new Core\Router();
 
 // Add the routes
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
+$router->add('ping', ['controller' => 'Home', 'action' => 'ping']);
 
-$router->add('posts/index', ['controller' => 'Posts', 'action' => 'index']);
+$router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
+
+// SIGNUP
+$router->add('signup', ['controller' => 'Signup', 'action' => 'index']);
+$router->add('signup/create', ['controller' => 'Signup', 'action' => 'create']);
+$router->add('signup/success', ['controller' => 'Signup', 'action' => 'success']);
+
+// LOGIN
+$router->add('login', ['controller' => 'Login', 'action' => 'index']);
+$router->add('login/create', ['controller' => 'Login', 'action' => 'create']);
+$router->add('logout', ['controller' => 'Login', 'action' => 'destroy']);
+
 
 $router->add('companies/index', ['controller' => 'Companies', 'action' => 'index']);
 

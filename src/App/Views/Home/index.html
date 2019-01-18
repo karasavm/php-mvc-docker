@@ -6,12 +6,21 @@
 
     <h1>Welcome</h1>
     <!--<p>Hello there, {{ name }}!</p>-->
-    <p>Hello there!</p>
 
+
+
+
+    {% if is_logged_in %}
+        <p>Hello {{ current_user.name }} !</p>
+    {% else %}
+        <p>Hello there! </p>
+        <a href="/signup">Sign Up</a> OR <a href="/login">Login</a>
+    {% endif %}
     <!--<ul>-->
         <!--{% for colour in colours %}-->
             <!--<li>{{ colour }}</li>-->
         <!--{% endfor %}-->
     <!--</ul>-->
+
 
 {% endblock %}
