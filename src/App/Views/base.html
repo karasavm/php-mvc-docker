@@ -12,6 +12,7 @@
         <a href="/users/index">Users</a> |
 
         {% if current_user %}
+            <a href="/profile/show">Profile</a> |
             <a href="/logout">Logout</a> ({{ current_user.name}})
         {% else %}
             <a href="/signup">Signup</a> |

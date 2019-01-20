@@ -59,6 +59,12 @@ $router->add('login', ['controller' => 'Login', 'action' => 'index']);
 $router->add('login/create', ['controller' => 'Login', 'action' => 'create']);
 $router->add('logout', ['controller' => 'Login', 'action' => 'destroy']);
 
+// PROFILE
+$router->add('profile/show', ['controller' => 'Profile', 'action' => 'show']);
+$router->add('profile/edit', ['controller' => 'Profile', 'action' => 'edit']);
+$router->add('profile/save', ['controller' => 'Profile', 'action' => 'save']);
+
+
 
 $router->add('companies/index', ['controller' => 'Companies', 'action' => 'index']);
 

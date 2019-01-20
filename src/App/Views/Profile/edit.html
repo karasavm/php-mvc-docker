@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block body %}
+
+<h1>Edit Profile</h1>
+
+    {% if user.errors is not empty %}
+    <p>Errors:</p>
+    <ul>
+        {% for error in user.errors %}
+        <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <form action="/profile/save" method="post">
+
+        <div>
+            <!-- <label for="inputId">Id:</label> -->
+            <input type="number" id="inputId" name="id" value="{{ user.id }}" hidden>
+        </div>
+
+        <div>
+            <label for="inputEmail">Email:</label>
+            <input type="text" id="inputEmail" name="email" value="{{ user.email }}">
+        </div>
+
+        <div>
+            <label for="inputName">Name:</label>
+            <input type="text" id="inputName" name="name" value="{{ user.name}}">
+        </div>
+
+
+        <div>
+            <label for="inputPassword">Password:</label>
+            <input type="password" id="inputPassword" name="password">
+        </div>
+
+        <div>
+            <label for="inputPasswordConfirm">Confirm Password:</label>
+            <input type="password" id="inputPasswordConfirm" name="password_confirm">
+        </div>
+
+        <button type="submit">SUBMIT</button>
+
+    </form>
+
+
+
+{% endblock %}

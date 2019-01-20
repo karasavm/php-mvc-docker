@@ -83,4 +83,19 @@ class Auth {
 
     }
 
+    /**
+     * Get the current logged in user's id
+     *
+     * @return mixed The user's id or null if not logged in
+     */
+    public static function getUserId() {
+
+        if (isset($_SESSION['user_id'])) {
+
+            return $_SESSION['user_id'];
+
+        }
+
+    }
+
 }

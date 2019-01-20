@@ -1,6 +1,6 @@
 CREATE TABLE public.users
 (
-    id integer NOT NULL DEFAULT nextval('users_id_seq'::regclass),
+    id serial NOT NULL,
     name character varying(100) COLLATE pg_catalog."default",
     company_id integer,
     email character varying(100) COLLATE pg_catalog."default" NOT NULL,
