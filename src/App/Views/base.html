@@ -3,33 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+
+    <!--Import style.css-->
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/posts">Posts</a> |
-        <a href="/companies/index">Companies</a> |
-        <a href="/users/index">Users</a> |
 
-        {% if current_user %}
-            <a href="/profile/show">Profile</a> |
-            <a href="/logout">Logout</a> ({{ current_user.name}})
-        {% else %}
-            <a href="/signup">Signup</a> |
-            <a href="/login">Login</a> |
-        {% endif %}
-    </nav>
+    <div class="container">
+        <!-- <nav>
+            <a href="/">Home</a> |
+            <a href="/posts">Posts</a> |
+            <a href="/companies/index">Companies</a> |
+            <a href="/users/index">Users</a> |
+    
+            {% if current_user %}
+                <a href="/profile/show">Profile</a> |
+                <a href="/logout">Logout</a> ({{ current_user.name}})
+            {% else %}
+                <a href="/signup">Signup</a> |
+                <a href="/login">Login</a> |
+            {% endif %}
+        </nav>
+         -->
+         <nav>
+                <div class="nav-wrapper">
+                  <a href="/" class="brand-logo">Demo</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
 
-    {% block body %}
-    {% endblock %}
+                    {% if current_user %}
+                        <li><a href="/companies/index">Companies</a></li>
+                        <li><a href="/users/index">Users</a></li>
+                        <li><a href="/profile/show">Profile</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    {% else %}
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/signup">Signup</a></li>
+                    {% endif %}
+                    
+                    
+                    
+                  </ul>
+                </div>
+              </nav>
+            
+                {% block body %}
+                {% endblock %}
+    </div>
 
-    <script
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js">
 
-    </script>
+    </script> -->
+
+    
+    <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 </html>
