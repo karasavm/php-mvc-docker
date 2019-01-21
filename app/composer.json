@@ -1,16 +1,17 @@
 {
-    "require": {
-        "twig/twig": "~1.0",
-        "vlucas/phpdotenv": "^3.1",
-        "filp/whoops": "^2.3.1",
-        "phpunit/phpunit": "^7.5"
-    },
-    "autoload": {
-        "psr-4": {
-             "Core\\": "src/Core/",
-             "App\\": "src/App/"
-        }
-    },
     "require-dev": {
+        "codeception/codeception": "^2.5"
+    },
+  "require": {
+    "twig/twig": "~1.0",
+    "vlucas/phpdotenv": "^3.1",
+    "filp/whoops": "^2.3.1",
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "src/Core/",
+      "App\\": "src/App/"
     }
+  }
 }
