@@ -9,12 +9,14 @@
 /**
  * Composer
  */
-require '../vendor/autoload.php';
+require '../../vendor/autoload.php';
 
 
 /**
  * Configurations
  */
+
+
 $config = new \App\Config();
 $config->load();
 
@@ -31,6 +33,10 @@ error_reporting(E_ALL);
 set_error_handler('Core\Error::errorHandler');
 set_exception_handler('Core\Error::exceptionHandler');
 
+
+//$whoops = new \Whoops\Run;
+//$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+//$whoops->register();
 
 /**
  * Sessions
@@ -65,8 +71,9 @@ $router->add('profile/edit', ['controller' => 'Profile', 'action' => 'edit']);
 $router->add('profile/save', ['controller' => 'Profile', 'action' => 'save']);
 
 
-
-$router->add('companies/index', ['controller' => 'Companies', 'action' => 'index']);
+// COMPANIES
+$router->add('companies', ['controller' => 'Companies', 'action' => 'index']);
+$router->add('companies/show/{id:\d+}', ['controller' => 'Companies', 'action' => 'show']);
 
 $router->add('users/index', ['controller' => 'Users', 'action' => 'index']);
 
@@ -77,3 +84,4 @@ $router->add('admin/users/index', ['controller' => 'Users', 'action' => 'index',
 //$router->add('admin/{controller}/{action}', ['namespace' => 'Admin']);
     
 $router->dispatch($_SERVER['QUERY_STRING']);
+

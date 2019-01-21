@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Companies{% endblock %}
+
+{% block body %}
+
+    <h3>Companies</h3>
+
+
+<table class="highlight">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for company in companies %}
+        <!--<h2>{{ company.name }}</h2>-->
+        <!--<p>{{ company.lat_lon }}</p>-->
+        <tr>
+            <td>{{ company.name }}</td>
+            <td>{{ company.lat_lon | split(',')[0]  }}</td>
+            <td>{{ company.lat_lon | split(',')[1]  }}</td>
+            <td><a href="companies/show/{{company.id}}">Show</a></td>
+            <!--<td><a href="companies/edit/{{company.id}}">Edit</a></td>-->
+            <td><a href="#">Edit</a></td>
+        </tr>
+
+    {% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock %}

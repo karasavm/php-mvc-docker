@@ -11,7 +11,9 @@ RUN apt-get update && apt-get install -y \
         # libpng-dev \
         libpq-dev \
     && docker-php-ext-install -j$(nproc) pdo_pgsql \
-    && docker-php-ext-install -j$(nproc) pgsql
+    && docker-php-ext-install -j$(nproc) pgsql \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug 
 
 # RUN apt-get update && apt-get install -y \
 #         libfreetype6-dev \

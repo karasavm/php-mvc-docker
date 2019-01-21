@@ -15,7 +15,7 @@ class Config
 
         # load dot environment's variables
         # todo: check according to .env.example
-        $dotenv = \Dotenv\Dotenv::create(dirname(__DIR__));
+        $dotenv = \Dotenv\Dotenv::create(dirname(dirname(__DIR__)));
         $dotenv->load();
 //        $dotenv->required(self::REQUIRED);
 
@@ -26,8 +26,7 @@ class Config
         self::$DB_PASSWORD = getenv('DB_PASSWORD');
 
         # Errors
-        self::$SHOW_ERRORS = getenv('SHOW_ERRORS');
-
+        self::$SHOW_ERRORS = getenv('SHOW_ERRORS') == 'true';
     }
 
 //    const REQUIRED = ['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS'];

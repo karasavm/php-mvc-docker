@@ -8,6 +8,10 @@ src/.idea/
 src/logs/
 src/vendor/
 
+app/.idea/
+app/logs/
+app/vendor/
+
 
 # IGNORE FILES
 src/.env

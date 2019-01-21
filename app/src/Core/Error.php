@@ -36,6 +36,7 @@ class Error
      */
     public static function exceptionHandler($exception)
     {
+
         // Code is 404 (not found) or 500 (general error)
         $code = $exception->getCode();
         if ($code != 404) {
@@ -44,7 +45,11 @@ class Error
         http_response_code($code);
 
         if (\App\Config::$SHOW_ERRORS) {
-            echo "<h1>Fatal error</h1>";
+//            $whoops = new \Whoops\Run;
+//            $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+//            $whoops->register();
+
+//            echo "<h1>Fatal error</h1>";
             echo "<p>Uncaught exception: '" . get_class($exception) . "'</p>";
             echo "<p>Message: '" . $exception->getMessage() . "'</p>";
             echo "<p>Stack trace:<pre>" . $exception->getTraceAsString() . "</pre></p>";
@@ -58,7 +63,7 @@ class Error
             $message .= "\nStack trace: " . $exception->getTraceAsString();
             $message .= "\nThrown in '" . $exception->getFile() . "' on line " . $exception->getLine();
 
-            error_log($message);
+            error_log('sss');
             //echo "<h1>An error occurred</h1>";
             /*
             if ($code == 404) {
@@ -67,7 +72,10 @@ class Error
                 echo "<h1>An error occurred</h1>";
             }
             */
+
             View::renderTemplate("$code.html");
         }
+
+        return \Whoops\Handler\Handler::DONE;
     }
 }
