@@ -16,8 +16,8 @@ class Signup extends \Core\Controller {
 
     public function createAction() {
 //        var_dump($_POST);
-
-        $user = new User($_POST);
+        
+        $user = new User($_POST['name'], $_POST['email'], $_POST['password'], $_POST['password_confirm']);
 
         if ($user->save()) {
 

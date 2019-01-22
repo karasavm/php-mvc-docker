@@ -14,11 +14,12 @@ class User extends \Core\Model {
 
     public $errors = [];
 
-    public function __construct($data = [])
+    public function __construct($name, $email, $password, $password_confirm)
     {
-        foreach ($data as $key => $value) {
-            $this->$key = $value;
-        }
+        $this->name = $name;
+        $this->email = $email;
+        $this->password = $password;
+        $this->password_confirm = $password_confirm;
 
     }
 

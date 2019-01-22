@@ -1,85 +1,9 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
-    
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection" />
-
-    <!--Import style.css-->
-    <link type="text/css" rel="stylesheet" href="/css/style.css" />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    
-</head>
-<body>
-
-    <div class="container">
-        <!-- <nav>
-            <a href="/">Home</a> |
-            <a href="/posts">Posts</a> |
-            <a href="/companies/index">Companies</a> |
-            <a href="/users/index">Users</a> |
-    
-                            <a href="/profile/show">Profile</a> |
-                <a href="/logout">Logout</a> (michael karas)
-                    </nav>
-         -->
-         <nav>
-                <div class="nav-wrapper">
-                  <a href="/" class="brand-logo">Demo App</a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-                                            <li><a href="/companies">Companies</a></li>
-                        <li><a href="/users/index">Users</a></li>
-                        <li><a href="/profile/show">Profile</a></li>
-                        <li><a href="/logout">Logout</a></li>
-                                        
-                    
-                    
-                  </ul>
-                </div>
-              </nav>
-            
-                
-    <h1>Welcome</h1>
-    <!--<p>Hello there, !</p>-->
-
-
-
-
-            <p>Hello michael karas !</p>
-    
-
-    <!--<ul>-->
-        <!---->
-            <!--<li>red</li>-->
-        <!---->
-            <!--<li>green</li>-->
-        <!---->
-            <!--<li>blue</li>-->
-        <!---->
-    <!--</ul>-->
-
-
-    </div>
-
-
-    <!--JavaScript at end of body for optimized loading-->
-    <!-- <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js">
-
-    </script> -->
-
-    
-    <script type="text/javascript" src="/js/materialize.js"></script>
-
-
-</body></html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body><p>Uncaught exception: 'ArgumentCountError'</p><p>Message: 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 4 expected'</p><p>Stack trace:</p><pre>#0 [internal function]: App\Models\User-&gt;__construct()
+#1 /app/src/App/Models/User.php(202): PDOStatement-&gt;fetch()
+#2 /app/src/App/Models/User.php(237): App\Models\User::findByEmail('averelgr@yahoo....')
+#3 /app/src/App/Controllers/Login.php(27): App\Models\User::authenticate('averelgr@yahoo....', '1')
+#4 [internal function]: App\Controllers\Login-&gt;createAction()
+#5 /app/src/Core/Controller.php(50): call_user_func_array(Array, Array)
+#6 /app/src/Core/Router.php(127): Core\Controller-&gt;__call('create', Array)
+#7 /app/src/public/index.php(86): Core\Router-&gt;dispatch('login/create')
+#8 {main}</pre><p></p><p>Thrown in '/app/src/App/Models/User.php' on line 17</p></body></html>
