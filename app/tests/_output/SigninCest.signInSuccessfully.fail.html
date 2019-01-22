@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
+
+    <!--Import style.css-->
+    <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    
+</head>
+<body>
+
+    <div class="container">
+        <!-- <nav>
+            <a href="/">Home</a> |
+            <a href="/posts">Posts</a> |
+            <a href="/companies/index">Companies</a> |
+            <a href="/users/index">Users</a> |
+    
+                            <a href="/signup">Signup</a> |
+                <a href="/login">Login</a> |
+                    </nav>
+         -->
+         <nav>
+                <div class="nav-wrapper">
+                  <a href="/" class="brand-logo">Demo App</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                                            <li><a href="/login">Login</a></li>
+                        <li><a href="/signup">Signup</a></li>
+                                        
+                    
+                    
+                  </ul>
+                </div>
+              </nav>
+            
+                
+    <h1>Login</h1>
+
+    <!---->
+
+    <form action="/login/create" method="post">
+        <div>
+            <label for="inputEmail">Email:</label>
+            <input type="text" id="inputEmail" name="email" value="">
+        </div>
+
+        <div>
+            <label for="inputPassword">Password:</label>
+            <input type="password" id="inputPassword" name="password">
+        </div>
+
+        <button type="submit">SUBMIT</button>
+
+    </form>
+
+
+
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js">
+
+    </script> -->
+
+    
+    <script type="text/javascript" src="/js/materialize.js"></script>
+</body>
+</html>

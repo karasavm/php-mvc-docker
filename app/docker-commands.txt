@@ -3,3 +3,6 @@ docker run --rm -it -v $PWD:/app composer require --dev phpunit/phpunit
 
 # RUN A SINGLE PHP SCRIPT USING A PHP IMAGE (custom_php) OR THE OFFICIAL
 docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp custom_php php test.php
+
+# CODECEPT COMMANDS
+docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp custom_php php vendor/bin/codecept
