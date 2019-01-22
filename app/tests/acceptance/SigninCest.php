@@ -7,12 +7,13 @@ class SigninCest
     }
 
     // tests
-    public function signInSuccessfully(AcceptanceTester $I)
+    public function loginSuccessfully(AcceptanceTester $I)
     {
         $I->amOnPage('/login');
-        $I->fillField('Email','averelge@yahoo.gr');
-        $I->fillField('Password','qwerty');
-        $I->click('Submit');
+        $I->fillField('email','averelgr@yahoo.gr');
+        $I->fillField('password','1');
+        $I->click('submit');
+        $I->wait(5);
         $I->see('Hello michael karas !');
     }
 }

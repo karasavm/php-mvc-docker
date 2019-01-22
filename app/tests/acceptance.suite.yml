@@ -7,6 +7,12 @@
 actor: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
-            url: web:80
+#        - PhpBrowser:
+#            url: http://web:80
+
+        - WebDriver:
+            url: 'http://web:80'
+            host: 'chrome'
+            browser: chrome # 'chrome' or 'firefox'
+            port: 4444
         - \Helper\Acceptance

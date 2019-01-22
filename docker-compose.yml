@@ -1,6 +1,23 @@
 version: '3'
 services:
 
+    codecept:
+        image: codeception/codeception
+        container_name: "app_codecept"
+        depends_on:
+            - chrome
+            - web
+        volumes:
+            - ./app:/project
+    chrome:
+        # image: selenium/standalone-chrome
+        image: selenium/standalone-chrome-debug
+        container_name: "app_chrome"
+        ports:
+            # - "4444:4444"
+            - "4444:5900"
+    
+
     web:
         image: nginx:latest
         container_name: "app_nginx"
@@ -19,6 +36,7 @@ services:
     php:
         build: ./php
         restart: always
+        image: "custom_php"
         container_name: "app_php"
         volumes:
             - "./app:/app"
@@ -63,6 +81,6 @@ services:
         image: composer
         volumes:
             - ./app:/app
-        command: install
+        command: update
 
 # APP DIR -> /app 
