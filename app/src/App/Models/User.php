@@ -14,13 +14,14 @@ class User extends \Core\Model {
 
     public $errors = [];
 
-    public function __construct($name, $email, $password, $password_confirm)
+    public function __construct($name = null, $email = null, $password = null, $password_confirm = null) // set to null because of FETC_CLASS PDO param
     {
-        $this->name = $name;
-        $this->email = $email;
-        $this->password = $password;
-        $this->password_confirm = $password_confirm;
 
+        if ($name) $this->name = $name;
+        if ($email) $this->email = $email;
+        if ($password) $this->password = $password;
+        if ($password_confirm) $this->password_confirm = $password_confirm;
+//        $this->name = 'tttttttttttttt';
     }
 
     public static function getAll() {
@@ -166,7 +167,8 @@ class User extends \Core\Model {
      *
      * @return boolean True if a record already exists with the specified email, false otherwise
      */
-    public static function emailExists($email, $ignore_id = null) {
+    //todo: transform it to static.
+    public function emailExists($email, $ignore_id = null) {
 
         $user = static::findByEmail($email);
 
@@ -220,8 +222,8 @@ class User extends \Core\Model {
         $stmt->setFetchMode(PDO::FETCH_CLASS, get_called_class());
 
         $stmt->execute();
-
         return $stmt->fetch();
+
     }
 
     /*

@@ -146,6 +146,8 @@ class Router
      */
     protected function convertToStudlyCaps($string)
     {
+//        return str_replace(' ', '', ucwords(strtolower(str_replace('-', ' ', $string))));
+
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $string)));
     }
 
@@ -187,6 +189,7 @@ class Router
      */
     protected function removeQueryStringVariables($url)
     {
+
         if ($url != '') {
             $parts = explode('&', $url, 2);
 
@@ -208,9 +211,9 @@ class Router
      */
     protected function getNamespace()
     {
-        $namespace = 'App\Controllers\\';
+        $namespace = 'App\\Controllers\\';
 
-        if (array_key_exists('namespace', $this->params)) {
+        if (isset($this->params['namespace'])) {
             $namespace .= $this->params['namespace'] . '\\';
         }
 

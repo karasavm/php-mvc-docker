@@ -4,9 +4,13 @@
     "twig/twig": "~1.0",
     "vlucas/phpdotenv": "^3.1",
     "filp/whoops": "^2.3.1",
-    "phpunit/phpunit": "^7.5",
-    "codeception/codeception": "^2.5"
+    "phpunit/phpunit": "^7.5"
   },
+
+  "require-dev": {
+		"codeception/aspect-mock": "*",
+    "codeception/codeception": "^2.5"
+	},
   "autoload": {
     "psr-4": {
       "Core\\": "src/Core/",
