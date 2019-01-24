@@ -12,24 +12,29 @@ class Config
 
     public function load() {
 
-
-        # load dot environment's variables
-        # todo: check according to .env.example
-        $dotenv = \Dotenv\Dotenv::create(dirname(dirname(__DIR__)));
-        $dotenv->load();
+        if (!self::$isLoaded) {
+//            codecept_debug('sssssssssss');
+            # load dot environment's variables
+            # todo: check according to .env.example
+            $dotenv = \Dotenv\Dotenv::create(dirname(dirname(__DIR__)));
+            $dotenv->load();
 //        $dotenv->required(self::REQUIRED);
 
-        # DB
-        self::$DB_HOST = getenv('DB_HOST');
-        self::$DB_NAME = getenv('DB_NAME');
-        self::$DB_USER = getenv('DB_USER');
-        self::$DB_PASSWORD = getenv('DB_PASSWORD');
+            # DB
+            self::$DB_HOST = getenv('DB_HOST');
+            self::$DB_NAME = getenv('DB_NAME');
+            self::$DB_USER = getenv('DB_USER');
+            self::$DB_PASSWORD = getenv('DB_PASSWORD');
 
-        # Errors
-        self::$SHOW_ERRORS = getenv('SHOW_ERRORS') == 'true';
+            # Errors
+            self::$SHOW_ERRORS = getenv('SHOW_ERRORS') == 'true';
+
+            self::$isLoaded = true;
+        }
+
     }
 
-//    const REQUIRED = ['DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS'];
+    private static $isLoaded = false;
     /**
      * Database host
      * @var string

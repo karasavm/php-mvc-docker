@@ -1,9 +1,8 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body><p>Uncaught exception: 'ArgumentCountError'</p><p>Message: 'Too few arguments to function App\Models\User::__construct(), 0 passed and exactly 4 expected'</p><p>Stack trace:</p><pre>#0 [internal function]: App\Models\User-&gt;__construct()
-#1 /app/src/App/Models/User.php(202): PDOStatement-&gt;fetch()
-#2 /app/src/App/Models/User.php(237): App\Models\User::findByEmail('averelgr@yahoo....')
-#3 /app/src/App/Controllers/Login.php(27): App\Models\User::authenticate('averelgr@yahoo....', '1')
-#4 [internal function]: App\Controllers\Login-&gt;createAction()
-#5 /app/src/Core/Controller.php(50): call_user_func_array(Array, Array)
-#6 /app/src/Core/Router.php(127): Core\Controller-&gt;__call('create', Array)
-#7 /app/src/public/index.php(86): Core\Router-&gt;dispatch('login/create')
-#8 {main}</pre><p></p><p>Thrown in '/app/src/App/Models/User.php' on line 17</p></body></html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body><p>Uncaught exception: 'Error'</p><p>Message: 'Call to undefined function Core\codecept_debug()'</p><p>Stack trace:</p><pre>#0 /app/src/App/Models/User.php(197): Core\Model::getDB()
+#1 /app/src/App/Models/User.php(240): App\Models\User::findByEmail('averelgr@yahoo....')
+#2 /app/src/App/Controllers/Login.php(27): App\Models\User::authenticate('averelgr@yahoo....', '1')
+#3 [internal function]: App\Controllers\Login-&gt;createAction()
+#4 /app/src/Core/Controller.php(50): call_user_func_array(Array, Array)
+#5 /app/src/Core/Router.php(127): Core\Controller-&gt;__call('create', Array)
+#6 /app/src/public/index.php(86): Core\Router-&gt;dispatch('login/create')
+#7 {main}</pre><p></p><p>Thrown in '/app/src/Core/Model.php' on line 27</p></body></html>

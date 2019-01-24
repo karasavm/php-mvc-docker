@@ -4,7 +4,7 @@ CREATE TABLE public.users
     name character varying(100) COLLATE pg_catalog."default",
     company_id integer,
     email character varying(100) COLLATE pg_catalog."default" NOT NULL,
-    password character varying(200) COLLATE pg_catalog."default" NOT NULL,
+    password_hash character varying(200) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT users_pkey PRIMARY KEY (id),
     CONSTRAINT unique_email_constrain UNIQUE (email)
 ,

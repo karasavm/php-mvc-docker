@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use PDO;
+use phpDocumentor\Reflection\Types\This;
 
 class User extends \Core\Model {
 
@@ -48,23 +49,38 @@ class User extends \Core\Model {
 
         // validate
         $this->validate();
-
         if (!empty($this->errors)) return false;
 
+        // create hash
+        $this->setHashedPassword();
+
+        // do db insertion
+        return $this->doSave();
+
+    }
+
+    private function doSave() {
+
         // sql operations
-        $sql = 'INSERT INTO users (name, email, password_hash) values (:name, :email, :password)';
+        $sql = 'INSERT INTO users (name, email, password_hash) values (:name, :email, :password_hash)';
 
         $db = static::getDB();
         $stmt = $db->prepare($sql);
 
-        $password_hash = password_hash($this->password, PASSWORD_DEFAULT);
-
         $stmt->bindValue(':name', $this->name, PDO::PARAM_STR);
         $stmt->bindValue(':email', $this->email, PDO::PARAM_STR);
-        $stmt->bindValue(':password', $password_hash, PDO::PARAM_STR);
+        $stmt->bindValue(':password_hash', $this->password_hash, PDO::PARAM_STR);
 
-        return $stmt->execute();
+        $result = $stmt->execute();
+
+        return $result;
+
     }
+
+    public function setHashedPassword() {
+        $this->password_hash = password_hash($this->password, PASSWORD_DEFAULT);
+    }
+
 
     /**
      * Update the user is db with the current property values
@@ -138,13 +154,13 @@ class User extends \Core\Model {
         }
 
         // Password
-        if (isset($this->password)) {
+        if (isset($this->password) && $this->password !== '') {
         
             if ($this->password != $this->password_confirm) {
                 $this->errors[] = 'Password must match confirmation';
             }
     
-           if (strlen($this->password) < 1) { // todo: chage 1 to 6
+           if (strlen($this->password) < 6) { // todo: chage 1 to 6
                $this->errors[] = 'Please enter at least 6 characters for the password';
            }
         }
