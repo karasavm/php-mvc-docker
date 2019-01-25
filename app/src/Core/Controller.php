@@ -81,7 +81,7 @@ abstract class Controller
     }
 
     /**
-     * Ensure that a user is logged in, riderects to /login page otherwise.
+     * Ensure that a user is logged in, redirects to /login page otherwise.
      *
      * @return void
      */

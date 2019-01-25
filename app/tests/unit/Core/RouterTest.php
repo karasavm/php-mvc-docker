@@ -1,7 +1,6 @@
 <?php namespace Core;
 
 //use \Core\Router;
-
 class RouterTest extends \Codeception\Test\Unit
 {
     /**

@@ -88,7 +88,6 @@ class User extends \Core\Model {
      * @return boolean True if user was updated, false otherwise
      */
     public function update($data) {
-        
         $this->name = $data['name'];
         $this->email = $data['email'];
 
@@ -98,8 +97,7 @@ class User extends \Core\Model {
         }
 
         // validate
-        $this->validate();  //todo: uncomment
-
+        $this->validate();
         if (!empty($this->errors)) return false;
 
         // SQL operations
@@ -112,11 +110,9 @@ class User extends \Core\Model {
 
         $sql .= ' WHERE id = :id;';
 
-        // execut
+        // execute
         $db = static::getDB();
         $stmt = $db->prepare($sql);
-
-        
 
         $stmt->bindValue(':name', $this->name, PDO::PARAM_STR);
         $stmt->bindValue(':id', $this->id, PDO::PARAM_INT);
@@ -149,7 +145,7 @@ class User extends \Core\Model {
             $this->errors[] = 'Invalid email';
         }
         
-        if ($this->emailExists($this->email, $this->id ?? null)) {
+        if (static::emailExists($this->email, $this->id ?? null)) {
             $this->errors[] = 'Email already taken';
         }
 
@@ -183,8 +179,7 @@ class User extends \Core\Model {
      *
      * @return boolean True if a record already exists with the specified email, false otherwise
      */
-    //todo: transform it to static.
-    public function emailExists($email, $ignore_id = null) {
+    public static function emailExists($email, $ignore_id = null) {
 
         $user = static::findByEmail($email);
 
@@ -225,7 +220,7 @@ class User extends \Core\Model {
      *
      * @param integer $id user's id
      *
-     * @return mixed User object if found, false otherwise
+     * @return User|false User object if found, false otherwise
      */
     public static function findById($id) {
 

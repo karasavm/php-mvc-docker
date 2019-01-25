@@ -71,16 +71,16 @@ class Auth {
     /**
      * Get the current logged in user
      *
-     * @return mixed The user model or null if not logged in
+     * @return User | null The user model or null if not logged in
      */
     public static function getUser() {
 
         if (isset($_SESSION['user_id'])) {
-
-            return User::findById($_SESSION['user_id']);
-
+            $user = User::findById($_SESSION['user_id']);
+            if ( $user === false) return null;
+            return $user;
         }
-
+        return null;
     }
 
     /**

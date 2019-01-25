@@ -1,7 +1,7 @@
 CREATE TABLE public.users
 (
     id serial NOT NULL,
-    name character varying(100) COLLATE pg_catalog."default",
+    name character varying(100) COLLATE pg_catalog."default" NOT NULL,
     company_id integer,
     email character varying(100) COLLATE pg_catalog."default" NOT NULL,
     password_hash character varying(200) COLLATE pg_catalog."default" NOT NULL,

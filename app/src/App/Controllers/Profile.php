@@ -42,7 +42,7 @@ class Profile extends Authenticated {
      */
     public function saveAction() {
         $user = Auth::getUser();
-        
+
         if ($user->update($_POST)) {
             $this->redirect('profile/show');
         } else {

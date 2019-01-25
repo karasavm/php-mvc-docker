@@ -19,7 +19,7 @@ modules:
               dsn: 'pgsql:host=db;dbname=testdb'
               user: 'mike'
               password: 'password'
-              cleanup: false # run populator before each test
-              populate: true  # run populator before all test
+              cleanup: false # run dump before each test
+              populate: true  # run dump before all test
               dump: 'tests/_data/dump.sql'
 #              populator: 'mysql -u $user $dbname < tests/_data/dump.sql'

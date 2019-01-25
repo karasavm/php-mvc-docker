@@ -5,48 +5,23 @@ $coverage->setData(array (
   array (
     21 => 
     array (
-      0 => 'UserTest::testConstructorWhenParametersProvided',
-      1 => 'UserTest::testConstructorWhenNoParametersProvided',
-      2 => 'UserTest::testValidateNameCheck',
-      3 => 'UserTest::testValidateEmailCheck',
-      4 => 'UserTest::testValidatePasswordCheck',
-      5 => 'UserTest::testDokimastiko',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     22 => 
     array (
-      0 => 'UserTest::testConstructorWhenParametersProvided',
-      1 => 'UserTest::testConstructorWhenNoParametersProvided',
-      2 => 'UserTest::testValidateNameCheck',
-      3 => 'UserTest::testValidateEmailCheck',
-      4 => 'UserTest::testValidatePasswordCheck',
-      5 => 'UserTest::testDokimastiko',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     23 => 
     array (
-      0 => 'UserTest::testConstructorWhenParametersProvided',
-      1 => 'UserTest::testConstructorWhenNoParametersProvided',
-      2 => 'UserTest::testValidateNameCheck',
-      3 => 'UserTest::testValidateEmailCheck',
-      4 => 'UserTest::testValidatePasswordCheck',
-      5 => 'UserTest::testDokimastiko',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     24 => 
     array (
-      0 => 'UserTest::testConstructorWhenParametersProvided',
-      1 => 'UserTest::testConstructorWhenNoParametersProvided',
-      2 => 'UserTest::testValidateNameCheck',
-      3 => 'UserTest::testValidateEmailCheck',
-      4 => 'UserTest::testValidatePasswordCheck',
-      5 => 'UserTest::testDokimastiko',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     26 => 
     array (
-      0 => 'UserTest::testConstructorWhenParametersProvided',
-      1 => 'UserTest::testConstructorWhenNoParametersProvided',
-      2 => 'UserTest::testValidateNameCheck',
-      3 => 'UserTest::testValidateEmailCheck',
-      4 => 'UserTest::testValidatePasswordCheck',
-      5 => 'UserTest::testDokimastiko',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     30 => 
     array (
@@ -71,240 +46,283 @@ $coverage->setData(array (
     ),
     51 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    53 => 
+    52 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    56 => 
+    55 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     58 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    59 => 
-    array (
-    ),
-    61 => 
-    array (
-    ),
-    63 => 
-    array (
-    ),
-    64 => 
-    array (
-    ),
+    60 => NULL,
     65 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     67 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    68 => NULL,
-    77 => 
+    68 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    78 => 
+    70 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    80 => 
+    71 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
+    72 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    74 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    76 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    78 => NULL,
     81 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     82 => 
     array (
-    ),
-    86 => 
-    array (
-    ),
-    88 => 
-    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     91 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    94 => 
+    92 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    93 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     95 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    98 => 
+    96 => 
+    array (
+    ),
+    97 => 
     array (
     ),
     101 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     102 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    106 => 
-    array (
-    ),
-    107 => 
+    105 => 
     array (
     ),
     108 => 
     array (
     ),
-    111 => 
+    109 => 
     array (
     ),
     112 => 
     array (
     ),
-    113 => 
+    115 => 
     array (
     ),
-    117 => 
+    116 => 
     array (
     ),
-    118 => NULL,
+    119 => 
+    array (
+    ),
+    120 => 
+    array (
+    ),
+    121 => 
+    array (
+    ),
+    122 => 
+    array (
+    ),
+    123 => 
+    array (
+    ),
+    126 => 
+    array (
+    ),
+    127 => 
+    array (
+    ),
     128 => 
     array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
     ),
-    129 => 
+    132 => 
     array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
     ),
-    133 => 
+    133 => NULL,
+    143 => 
     array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
-    ),
-    134 => 
-    array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
-    ),
-    137 => 
-    array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
-    ),
-    138 => 
-    array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
-    ),
-    142 => 
-    array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     144 => 
     array (
-      0 => 'UserTest::testValidatePasswordCheck',
-    ),
-    145 => 
-    array (
-      0 => 'UserTest::testValidatePasswordCheck',
     ),
     148 => 
     array (
-      0 => 'UserTest::testValidatePasswordCheck',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     149 => 
     array (
-      0 => 'UserTest::testValidatePasswordCheck',
     ),
-    162 => 
+    152 => 
     array (
-      0 => 'UserTest::testValidateNameCheck',
-      1 => 'UserTest::testValidateEmailCheck',
-      2 => 'UserTest::testValidatePasswordCheck',
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    174 => 
+    153 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    157 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    159 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    160 => 
     array (
     ),
-    176 => 
+    163 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    164 => 
     array (
     ),
     177 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    178 => 
+    188 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    182 => 
+    190 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    184 => NULL,
-    195 => 
+    191 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    197 => 
+    192 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    198 => 
+    196 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    199 => 
+    198 => NULL,
+    209 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    201 => 
+    211 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    203 => 
+    212 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    205 => 
+    213 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    206 => NULL,
+    215 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
     217 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     219 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
-    220 => 
+    220 => NULL,
+    231 => 
     array (
     ),
-    221 => 
+    233 => 
     array (
     ),
-    223 => 
+    234 => 
     array (
     ),
-    225 => 
+    235 => 
     array (
     ),
-    226 => 
+    237 => 
     array (
     ),
-    228 => NULL,
+    239 => 
+    array (
+    ),
     240 => 
     array (
     ),
-    242 => 
+    242 => NULL,
+    254 => 
     array (
     ),
-    243 => 
+    256 => 
     array (
     ),
-    244 => 
+    257 => 
     array (
     ),
-    248 => 
+    258 => 
     array (
     ),
-    249 => NULL,
+    262 => 
+    array (
+    ),
+    263 => NULL,
   ),
-  '/app/src/Core/Model.php' => 
+  '/app/src/App/Config.php' => 
   array (
-    23 => 
+    15 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    24 => 
     array (
     ),
     25 => 
@@ -319,170 +337,40 @@ $coverage->setData(array (
     30 => 
     array (
     ),
+    32 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+  ),
+  '/app/src/Core/Model.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    25 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    26 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    27 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
+    30 => 
+    array (
+      0 => 'App\\Models\\UserTest::testUpdate',
+    ),
     33 => 
     array (
+      0 => 'App\\Models\\UserTest::testUpdate',
     ),
     34 => NULL,
-  ),
-  '/app/src/Core/Router.php' => 
-  array (
-    36 => 
-    array (
-    ),
-    39 => 
-    array (
-    ),
-    42 => 
-    array (
-    ),
-    45 => 
-    array (
-    ),
-    47 => 
-    array (
-    ),
-    48 => 
-    array (
-    ),
-    57 => 
-    array (
-      0 => 'Core\\RouterTest::testGetRoutes',
-    ),
-    58 => NULL,
-    70 => 
-    array (
-    ),
-    71 => 
-    array (
-    ),
-    73 => 
-    array (
-    ),
-    74 => 
-    array (
-    ),
-    75 => 
-    array (
-    ),
-    79 => 
-    array (
-    ),
-    80 => 
-    array (
-    ),
-    84 => 
-    array (
-    ),
-    85 => NULL,
-    94 => 
-    array (
-      0 => 'Core\\RouterTest::testGetParams',
-    ),
-    95 => NULL,
-    107 => 
-    array (
-    ),
-    109 => 
-    array (
-    ),
-    110 => 
-    array (
-    ),
-    111 => 
-    array (
-    ),
-    112 => 
-    array (
-    ),
-    114 => 
-    array (
-    ),
-    115 => 
-    array (
-    ),
-    117 => 
-    array (
-    ),
-    118 => 
-    array (
-    ),
-    126 => 
-    array (
-    ),
-    127 => 
-    array (
-    ),
-    129 => 
-    array (
-    ),
-    132 => 
-    array (
-    ),
-    135 => 
-    array (
-    ),
-    137 => 
-    array (
-    ),
-    151 => 
-    array (
-      0 => 'Core\\RouterTest::testConvertToStudlyCaps',
-      1 => 'Core\\RouterTest::testConvertToCamelCase',
-    ),
-    152 => NULL,
-    164 => 
-    array (
-      0 => 'Core\\RouterTest::testConvertToCamelCase',
-    ),
-    165 => NULL,
-    193 => 
-    array (
-      0 => 'Core\\RouterTest::testRemoveQueryStringVariables',
-    ),
-    194 => 
-    array (
-      0 => 'Core\\RouterTest::testRemoveQueryStringVariables',
-    ),
-    196 => 
-    array (
-      0 => 'Core\\RouterTest::testRemoveQueryStringVariables',
-    ),
-    197 => 
-    array (
-      0 => 'Core\\RouterTest::testRemoveQueryStringVariables',
-    ),
-    199 => 
-    array (
-      0 => 'Core\\RouterTest::testRemoveQueryStringVariables',
-    ),
-    203 => 
-    array (
-      0 => 'Core\\RouterTest::testRemoveQueryStringVariables',
-    ),
-    204 => NULL,
-    214 => 
-    array (
-      0 => 'Core\\RouterTest::testGetNamespaceWhenValueSetProperlyOnParams',
-      1 => 'Core\\RouterTest::testGetNamespaceWhenValueSetToNullOnParams',
-      2 => 'Core\\RouterTest::testGetNamespaceWhenNamespaceNotSetOnParams',
-    ),
-    216 => 
-    array (
-      0 => 'Core\\RouterTest::testGetNamespaceWhenValueSetProperlyOnParams',
-      1 => 'Core\\RouterTest::testGetNamespaceWhenValueSetToNullOnParams',
-      2 => 'Core\\RouterTest::testGetNamespaceWhenNamespaceNotSetOnParams',
-    ),
-    217 => 
-    array (
-      0 => 'Core\\RouterTest::testGetNamespaceWhenValueSetProperlyOnParams',
-    ),
-    220 => 
-    array (
-      0 => 'Core\\RouterTest::testGetNamespaceWhenValueSetProperlyOnParams',
-      1 => 'Core\\RouterTest::testGetNamespaceWhenValueSetToNullOnParams',
-      2 => 'Core\\RouterTest::testGetNamespaceWhenNamespaceNotSetOnParams',
-    ),
-    221 => NULL,
   ),
   '/app/src/App/Auth.php' => 
   array (
@@ -558,10 +446,19 @@ $coverage->setData(array (
     78 => 
     array (
     ),
+    79 => 
+    array (
+    ),
     80 => 
     array (
     ),
+    81 => 
+    array (
+    ),
     82 => 
+    array (
+    ),
+    83 => 
     array (
     ),
     84 => 
@@ -1468,33 +1365,6 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/app/src/App/Config.php' => 
-  array (
-    18 => 
-    array (
-    ),
-    19 => 
-    array (
-    ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-  ),
   '/app/src/App/Controllers/Login.php' => 
   array (
     17 => 
@@ -1608,6 +1478,9 @@ $coverage->setData(array (
     26 => 
     array (
     ),
+    27 => 
+    array (
+    ),
     28 => 
     array (
     ),
@@ -1620,13 +1493,10 @@ $coverage->setData(array (
     32 => 
     array (
     ),
-    34 => 
+    35 => 
     array (
     ),
-    37 => 
-    array (
-    ),
-    38 => 
+    36 => 
     array (
     ),
   ),
@@ -1861,6 +1731,228 @@ $coverage->setData(array (
     array (
     ),
     55 => 
+    array (
+    ),
+  ),
+  '/app/src/Core/Router.php' => 
+  array (
+    34 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    71 => 
+    array (
+    ),
+    73 => 
+    array (
+    ),
+    74 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    77 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    84 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    94 => 
+    array (
+    ),
+    95 => 
+    array (
+    ),
+    106 => 
+    array (
+    ),
+    107 => 
+    array (
+    ),
+    109 => 
+    array (
+    ),
+    110 => 
+    array (
+    ),
+    111 => 
+    array (
+    ),
+    112 => 
+    array (
+    ),
+    114 => 
+    array (
+    ),
+    115 => 
+    array (
+    ),
+    117 => 
+    array (
+    ),
+    118 => 
+    array (
+    ),
+    126 => 
+    array (
+    ),
+    127 => 
+    array (
+    ),
+    128 => 
+    array (
+    ),
+    129 => 
+    array (
+    ),
+    130 => 
+    array (
+    ),
+    131 => 
+    array (
+    ),
+    132 => 
+    array (
+    ),
+    133 => 
+    array (
+    ),
+    134 => 
+    array (
+    ),
+    135 => 
+    array (
+    ),
+    136 => 
+    array (
+    ),
+    137 => 
+    array (
+    ),
+    148 => 
+    array (
+    ),
+    151 => 
+    array (
+    ),
+    152 => 
+    array (
+    ),
+    163 => 
+    array (
+    ),
+    164 => 
+    array (
+    ),
+    165 => 
+    array (
+    ),
+    191 => 
+    array (
+    ),
+    193 => 
+    array (
+    ),
+    194 => 
+    array (
+    ),
+    196 => 
+    array (
+    ),
+    197 => 
+    array (
+    ),
+    198 => 
+    array (
+    ),
+    199 => 
+    array (
+    ),
+    200 => 
+    array (
+    ),
+    201 => 
+    array (
+    ),
+    203 => 
+    array (
+    ),
+    204 => 
+    array (
+    ),
+    213 => 
+    array (
+    ),
+    214 => 
+    array (
+    ),
+    216 => 
+    array (
+    ),
+    217 => 
+    array (
+    ),
+    218 => 
+    array (
+    ),
+    220 => 
+    array (
+    ),
+    221 => 
     array (
     ),
   ),
@@ -57039,72 +57131,7 @@ $coverage->setData(array (
   ),
 ));
 $coverage->setTests(array (
-  'UserTest::testConstructorWhenParametersProvided' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'UserTest::testConstructorWhenNoParametersProvided' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'UserTest::testValidateNameCheck' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'UserTest::testValidateEmailCheck' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'UserTest::testValidatePasswordCheck' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'UserTest::testDokimastiko' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testConvertToStudlyCaps' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testConvertToCamelCase' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testRemoveQueryStringVariables' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testGetNamespaceWhenValueSetProperlyOnParams' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testGetNamespaceWhenValueSetToNullOnParams' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testGetNamespaceWhenNamespaceNotSetOnParams' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testGetParams' => 
-  array (
-    'size' => 'unknown',
-    'status' => 0,
-  ),
-  'Core\\RouterTest::testGetRoutes' => 
+  'App\\Models\\UserTest::testUpdate' => 
   array (
     'size' => 'unknown',
     'status' => 0,
